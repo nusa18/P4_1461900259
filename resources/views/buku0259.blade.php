@@ -6,8 +6,11 @@
 </head>
 <body>
 	<div class="container">
-		
-		<a href="/export_excel" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
+		<center>
+			<h4>Export Laporan Excel Pada Laravel</h4>
+			<h5><a>IKHLASUL NUSA (1461900259)</a></h5>
+		</center>
+		<a style="float:left;" href="/export_excel" class="btn btn-info my-3" target="_blank">EXPORT EXCEL</a>
 		
 		<table class='table table-bordered'>
 			<thead>
@@ -24,8 +27,8 @@
 				<tr>
 					<td>{{ $i++ }}</td>
 					<td>{{$s->judul}}</td>
-					<td>{{$s->tahun_terbit}}</td>
 					<td>{{$s->jenis}}</td>
+					<td>{{$s->tahun_terbit}}</td>
 				</tr>
 				@endforeach
 			</tbody>
